@@ -1,0 +1,10 @@
+---
+
+- name: "add Copr repo for password safe owned by simger"
+  yumrepo:
+    name="simger-passwordsafe"
+    description="Copr repo for passwordsafe owned by simger"
+    baseurl="https://copr-be.cloud.fedoraproject.org/results/simger/passwordsafe/fedora-$releasever-$basearch/"
+    gpgkey="https://copr-be.cloud.fedoraproject.org/results/simger/passwordsafe/pubkey.gpg"
+    skip_if_unavailable="yes"
+    gpgcheck="yes"

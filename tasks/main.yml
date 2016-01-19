@@ -1,0 +1,5 @@
+---
+# tasks file for ansible-atom
+
+- include: "{{ ansible_distribution }}_repo.yml"
+- include: "{{ ansible_distribution }}_packages.yml"

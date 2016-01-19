@@ -1,0 +1,6 @@
+---
+
+- name: "Installing passwordsafe from copr repo: simger-passwordsafe"
+  package:
+    name=passwordsafe
+    state=latest
